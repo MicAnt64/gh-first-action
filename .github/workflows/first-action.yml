@@ -1,0 +1,16 @@
+name: First Workflow
+# Define when WF should be executed.
+on: workflow_dispatch
+# Work to be done
+jobs:
+  # give it a name
+  first-job:
+    # Define runner (env) on which the job will exec different steps
+    # This is a rsvd name
+    runs-on: ubuntu-latest
+    # Def steps
+    steps:
+      - name: Print greeting
+        run: echo "Hello World"
+      - name: Print goodbye
+        run: echo "Done - bye!"
